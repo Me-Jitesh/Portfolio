@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f3;
+    color: #333;
+}
+
+.neuromorphic {
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    background-color: #f0f0f3;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.neuromorphic:hover {
+    box-shadow: 12px 12px 20px #bebebe, -12px -12px 20px #ffffff;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent-color: #8a2be2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}

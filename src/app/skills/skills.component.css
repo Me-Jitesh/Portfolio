@@ -1,0 +1,68 @@
+.neuromorphic {
+    background-color: #f0f0f3;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.neuromorphic:hover {
+    box-shadow: 12px 12px 20px #bebebe, -12px -12px 20px #ffffff;
+}
+
+.skill-chip {
+    background-color: #f0f0f3;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.2s ease;
+    color: #333;
+}
+
+.skill-chip:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+}
+
+.skill-chip:active {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #6f42c1;
+    /* Custom violet color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #563d7c;
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
