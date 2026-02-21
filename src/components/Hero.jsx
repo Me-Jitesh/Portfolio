@@ -1,19 +1,34 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
-    <section className="h-screen flex items-center justify-center text-center">
+    <section className="h-screen flex items-center justify-center text-center relative">
       <div>
-        <h2 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, I'm Jitesh Singh
-        </h2>
-        <p className="text-gray-400 text-lg">
-          Java | Spring Boot | Kafka | React | AWS
-        </p>
-        <a
-          href="#projects"
-          className="mt-6 inline-block bg-cyan-500 px-6 py-3 rounded-lg hover:bg-cyan-600"
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
         >
-          View Projects
-        </a>
+          Jitesh Singh
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="mt-6 text-gray-400 text-lg"
+        >
+          Backend Engineer • Kafka • Distributed Systems • Cloud
+        </motion.p>
+
+        <motion.a
+          href="#projects"
+          whileHover={{ scale: 1.1 }}
+          className="mt-10 inline-block px-8 py-3 rounded-full bg-cyan-500/20 border border-cyan-400 text-cyan-300 backdrop-blur-lg hover:bg-cyan-400/30 transition"
+        >
+          View Work
+        </motion.a>
       </div>
     </section>
   );

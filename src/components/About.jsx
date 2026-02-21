@@ -1,12 +1,16 @@
+import SectionWrapper from "./SectionWrapper";
+
 export default function About() {
   return (
-    <section id="about" className="py-20 max-w-5xl mx-auto px-4">
-      <h3 className="text-3xl font-bold mb-6">About Me</h3>
-      <p className="text-gray-400 leading-7">
-        I'm a Software Developer specializing in Java, Spring Boot, and
-        Microservices architecture. I build scalable backend systems using
-        Kafka, Redis, and AWS cloud infrastructure.
-      </p>
-    </section>
+    <SectionWrapper id="about">
+      <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-10 shadow-xl">
+        <h2 className="text-3xl font-bold mb-6 text-cyan-400">About Me</h2>
+        <p className="text-gray-300 leading-8">
+          I design and build scalable backend systems using Java, Spring Boot,
+          Kafka, and cloud-native infrastructure. Focused on distributed
+          architecture, event-driven systems, and performance optimization.
+        </p>
+      </div>
+    </SectionWrapper>
   );
 }

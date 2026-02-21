@@ -1,32 +1,33 @@
+import SectionWrapper from "./SectionWrapper";
+
 const skills = [
   "Java",
   "Spring Boot",
-  "Microservices",
   "Kafka",
+  "Microservices",
   "Redis",
-  "MySQL",
-  "React",
   "AWS",
+  "React",
   "Linux",
-  "DSA",
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-900 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h3 className="text-3xl font-bold mb-8">Skills</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 p-6 rounded-xl text-center hover:scale-105 transition"
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
+    <SectionWrapper id="skills">
+      <h2 className="text-3xl font-bold mb-12 text-cyan-400">
+        Technical Stack
+      </h2>
+
+      <div className="grid md:grid-cols-4 gap-8">
+        {skills.map((skill, i) => (
+          <div
+            key={i}
+            className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-xl text-center hover:border-cyan-400 hover:shadow-cyan-400/20 hover:shadow-lg transition"
+          >
+            {skill}
+          </div>
+        ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
