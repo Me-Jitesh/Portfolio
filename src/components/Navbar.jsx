@@ -1,19 +1,20 @@
 export default function Navbar() {
   return (
-    <nav className="fixed w-full z-50 backdrop-blur-xl bg-white/5 border-b border-white/10">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="font-semibold tracking-widest text-cyan-400">JITESH</h1>
-        <div className="space-x-8 hidden md:block text-sm">
-          <a href="#about" className="hover:text-cyan-400 transition">
+    <nav className="fixed w-full bg-white border-b border-gray-200 z-50">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+        <h1 className="text-lg font-semibold text-gray-900">Jitesh Singh</h1>
+
+        <div className="hidden md:flex space-x-8 text-sm text-gray-600">
+          <a href="#about" className="hover:text-blue-600 transition">
             About
           </a>
-          <a href="#skills" className="hover:text-cyan-400 transition">
+          <a href="#skills" className="hover:text-blue-600 transition">
             Skills
           </a>
-          <a href="#projects" className="hover:text-cyan-400 transition">
+          <a href="#projects" className="hover:text-blue-600 transition">
             Projects
           </a>
-          <a href="#contact" className="hover:text-cyan-400 transition">
+          <a href="#contact" className="hover:text-blue-600 transition">
             Contact
           </a>
         </div>

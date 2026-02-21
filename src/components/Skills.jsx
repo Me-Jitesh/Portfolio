@@ -1,5 +1,3 @@
-import SectionWrapper from "./SectionWrapper";
-
 const skills = [
   "Java",
   "Spring Boot",
@@ -13,21 +11,23 @@ const skills = [
 
 export default function Skills() {
   return (
-    <SectionWrapper id="skills">
-      <h2 className="text-3xl font-bold mb-12 text-cyan-400">
-        Technical Stack
-      </h2>
+    <section id="skills" className="py-24 px-6 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-gray-900 mb-12">
+          Technical Stack
+        </h2>
 
-      <div className="grid md:grid-cols-4 gap-8">
-        {skills.map((skill, i) => (
-          <div
-            key={i}
-            className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-xl text-center hover:border-cyan-400 hover:shadow-cyan-400/20 hover:shadow-lg transition"
-          >
-            {skill}
-          </div>
-        ))}
+        <div className="grid md:grid-cols-4 gap-8">
+          {skills.map((skill, i) => (
+            <div
+              key={i}
+              className="border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-blue-600 transition"
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
       </div>
-    </SectionWrapper>
+    </section>
   );
 }

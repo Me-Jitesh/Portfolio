@@ -9,12 +9,12 @@ export const projects = [
     title: "PixiVerse",
     description: "AI Image generation application.",
     tech: "React, Spring Boot",
-    link: "#",
+    link: "https://pix-generator-ai.vercel.app/",
   },
   {
     title: "LogiStock",
     description: "Logistics inventory management system.",
     tech: "Java, MySQL",
-    link: "#",
+    link: "https://logistock.onrender.com/analytics/",
   },
 ];

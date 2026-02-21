@@ -1,34 +1,46 @@
-import { motion } from "framer-motion";
+import profile from "../assets/profile.png";
 
 export default function Hero() {
   return (
-    <section className="h-screen flex items-center justify-center text-center relative">
-      <div>
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
-        >
-          Jitesh Singh
-        </motion.h1>
+    <section className="min-h-screen flex items-center pt-24 px-6 bg-white">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        {/* Text */}
+        <div>
+          <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+            Building Scalable
+            <br />
+            <span className="text-blue-600">Backend Systems</span>
+          </h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-6 text-gray-400 text-lg"
-        >
-          Backend Engineer • Kafka • Distributed Systems • Cloud
-        </motion.p>
+          <p className="mt-6 text-lg text-gray-600">
+            Java • Spring Boot • Kafka • Microservices • AWS
+          </p>
 
-        <motion.a
-          href="#projects"
-          whileHover={{ scale: 1.1 }}
-          className="mt-10 inline-block px-8 py-3 rounded-full bg-cyan-500/20 border border-cyan-400 text-cyan-300 backdrop-blur-lg hover:bg-cyan-400/30 transition"
-        >
-          View Work
-        </motion.a>
+          <div className="mt-8 flex gap-4">
+            <a
+              href="#projects"
+              className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-sm hover:bg-blue-700 transition"
+            >
+              View Projects
+            </a>
+
+            <a
+              href="#contact"
+              className="px-6 py-3 border border-gray-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+
+        {/* Image */}
+        <div className="flex justify-center">
+          <img
+            src={profile}
+            alt="Profile"
+            className="w-80 h-80 object-cover rounded-xl shadow-md"
+          />
+        </div>
       </div>
     </section>
   );
