@@ -17,11 +17,11 @@ export default function Skills() {
           Technical Stack
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-8 text-slate-800">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-blue-600 transition"
+              className="border border-gary-600 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-blue-600 transition"
             >
               {skill}
             </div>
