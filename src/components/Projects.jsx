@@ -4,8 +4,8 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 px-6 bg-gray-50">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-10 uppercase">
-          My Works ::{" "}
+        <h2 className="text-4xl font-bold text-gray-900 mb-12 uppercase tracking-tight">
+          My Works
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -14,10 +14,18 @@ export default function Projects() {
               key={i}
               className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              {/*  Desktop Fit Preview */}
-              <div className="relative w-full aspect-video overflow-hidden bg-gray-100">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="origin-center scale-[0.26]">
+              {/* Desktop Preview */}
+              <div className="relative w-full aspect-video bg-gray-100 rounded-t-xl overflow-hidden border-b border-gray-200">
+                {/* Browser Top Bar */}
+                <div className="absolute top-0 left-0 w-full h-8 bg-gray-50 border-b border-gray-200 flex items-center px-3 gap-2 z-10">
+                  <span className="w-2.5 h-2.5 bg-red-400 rounded-full"></span>
+                  <span className="w-2.5 h-2.5 bg-yellow-400 rounded-full"></span>
+                  <span className="w-2.5 h-2.5 bg-green-400 rounded-full"></span>
+                </div>
+
+                {/* Scaled Desktop */}
+                <div className="absolute inset-0 pt-8 overflow-hidden">
+                  <div className="origin-top-left scale-[0.26]">
                     <iframe
                       src={project.link}
                       title={project.title}
@@ -25,9 +33,11 @@ export default function Projects() {
                     />
                   </div>
                 </div>
+
+                <div className="absolute inset-0 pointer-events-none shadow-inner"></div>
               </div>
 
-              {/* Content */}
+              {/* Content Section */}
               <div className="p-6 space-y-4">
                 {/* Title */}
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
@@ -39,16 +49,14 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                {/* Tech Tags */}
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 pt-1">
                   {project.tech.split(",").map((tech, index) => (
                     <span
                       key={index}
                       className="text-xs font-medium px-3 py-1 rounded-full 
-                 bg-gradient-to-r from-indigo-50 to-blue-50 
-                 text-indigo-600 
-                 border border-indigo-100
-                 transition hover:from-indigo-100 hover:to-blue-100"
+                                 bg-indigo-50 text-indigo-600 
+                                 border border-indigo-100"
                     >
                       {tech.trim()}
                     </span>
@@ -62,13 +70,13 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-sm 
-               px-12 py-2 rounded-3xl
-               bg-gradient-to-r from-indigo-800 to-blue-500 
-               text-white 
-               shadow-md 
-               hover:shadow-lg 
-               hover:from-indigo-500 hover:to-blue-900
-               transition-all duration-300"
+                               px-5 py-2 rounded-3xl
+                               bg-gradient-to-r from-indigo-800 to-blue-500 
+                               text-white 
+                               shadow-md 
+                               hover:shadow-lg 
+                               hover:from-blue-700 hover:to-indigo-700
+                               transition-all duration-300"
                   >
                     → Explore
                   </a>
