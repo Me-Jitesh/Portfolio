@@ -6,15 +6,33 @@ export const projects = [
     link: "https://fraud-analyzr.vercel.app",
   },
   {
+    title: "LogiStock",
+    description: "Logistics inventory management system.",
+    tech: "Java, MySQL",
+    link: "https://logistock.onrender.com/analytics/",
+  },
+  {
     title: "PixiVerse",
     description: "AI Image generation application.",
     tech: "React, Spring Boot",
     link: "https://pix-generator-ai.vercel.app/",
   },
   {
-    title: "LogiStock",
-    description: "Logistics inventory management system.",
+    title: "StreamFlix",
+    description: "Video Streaming Palteform.",
     tech: "Java, MySQL",
-    link: "https://logistock.onrender.com/analytics/",
+    link: "https://streamflix-ui.vercel.app/upload",
+  },
+  {
+    title: "MagixUI",
+    description: "Responsive UI for PWA.",
+    tech: "React, Redux",
+    link: "https://magical-web.vercel.app/",
+  },
+  {
+    title: "Architect Firm",
+    description: "Architect Firm Management.",
+    tech: "HTML, CSS, Javascript, Servlet, JSP",
+    link: "https://er-jiteshsingh.github.io/ArchitectFirm/",
   },
 ];
