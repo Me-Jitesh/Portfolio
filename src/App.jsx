@@ -14,8 +14,8 @@ function App() {
       <AnimatePresence mode="wait">
         <Hero />
       </AnimatePresence>
-      <About />
       <Projects />
+      <About />
       <Contact />
       <Footer />
     </div>

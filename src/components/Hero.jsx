@@ -3,7 +3,19 @@ import { useRef } from "react";
 import profile from "../assets/profile.png";
 
 export default function Hero() {
-  const skills = ["Java", "Spring Boot", "Kafka", "Microservices", "AWS"];
+  const skills = [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "Microservices",
+    "Spring AI",
+    "MySQL",
+    "React",
+    "Javascript",
+    "Docker",
+    "AWS",
+    "Redis",
+  ];
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -17,7 +29,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center pt-24 px-6 bg-white overflow-hidden"
+      className="relative min-h-screen flex items-center pt-10 px-6 bg-white overflow-hidden"
     >
       {/* Cursor Glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
@@ -110,22 +122,6 @@ export default function Hero() {
               </motion.span>
             ))}
           </motion.div>
-
-          <div className="mt-10 flex gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="#contact"
-              className="px-6 py-3 text-slate-700 border border-gray-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition"
-            >
-              Contact
-            </a>
-          </div>
         </div>
 
         {/* IMAGE */}
