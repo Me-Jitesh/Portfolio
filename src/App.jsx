@@ -5,14 +5,16 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <div className="bg-gray-950 text-white">
       <Navbar />
-      <Hero />
+      <AnimatePresence mode="wait">
+        <Hero />
+      </AnimatePresence>
       <About />
-      <Skills />
       <Projects />
       <Contact />
       <Footer />
