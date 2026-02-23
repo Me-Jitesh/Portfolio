@@ -1,19 +1,33 @@
+import { CommandLineIcon } from "@heroicons/react/24/outline";
+
 export default function Navbar() {
   return (
-    <nav className="fixed w-full bg-white border-b border-gray-200 z-50">
+    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b border-gray-200">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-        <h1 className="text-lg font-semibold text-gray-900">Jitesh Singh</h1>
+        <div className="flex items-center gap-2">
+          <CommandLineIcon className="w-6 h-6 text-indigo-600" />
 
-        <div className="hidden md:flex space-x-8 text-sm text-gray-600">
-          <a href="#about" className="hover:text-blue-600 transition">
-            About
-          </a>
-          <a href="#projects" className="hover:text-blue-600 transition">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-blue-600 transition">
-            Contact
-          </a>
+          <h1 className="text-xl font-semibold tracking-tight text-gray-900">
+            <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent uppercase">
+              Jitesh Singh
+            </span>
+          </h1>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+          {["Projects", "About", "Contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="relative group transition"
+            >
+              <span className="group-hover:text-gray-900 transition-colors duration-300">
+                {item}
+              </span>
+
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-indigo-600 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
         </div>
       </div>
     </nav>
