@@ -1,14 +1,10 @@
-import { CommandLineIcon } from "@heroicons/react/24/outline";
-
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b border-gray-200">
+    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         <div className="flex items-center gap-2">
-          <CommandLineIcon className="w-6 h-6 text-indigo-600" />
-
           <h1 className="text-xl font-semibold tracking-tight text-gray-900">
-            <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent uppercase">
+            <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent uppercase">
               Jitesh Singh
             </span>
           </h1>
