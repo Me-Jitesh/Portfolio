@@ -25,11 +25,13 @@ export default function Projects() {
 
                 {/* Scaled Desktop */}
                 <div className="absolute inset-0 pt-8 overflow-hidden">
-                  <div className="origin-top-left scale-[0.26]">
+                  <div className="origin-top-left scale-[0.26] will-change-transform">
                     <iframe
                       src={project.link}
                       title={project.title}
-                      className="w-[1920px] h-[1080px] border-0"
+                      loading="lazy"
+                      className="w-[1920px] h-[1080px] border-0 pointer-events-none"
+                      style={{ transform: "translateZ(0)" }}
                     />
                   </div>
                 </div>
