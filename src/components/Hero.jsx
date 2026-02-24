@@ -34,13 +34,13 @@ export default function Hero() {
       {/* Cursor Glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <motion.div
-          className="absolute w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-30"
+          className="absolute w-[500px] h-[500px] bg-blue-200 rounded-full blur-[40px] opacity-60"
           animate={{
             x: [0, 300, -200, 0],
             y: [0, -200, 200, 0],
           }}
           transition={{
-            duration: 20,
+            duration: 10,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -49,10 +49,10 @@ export default function Hero() {
 
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(8)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-3 h-3 bg-blue-100 rounded-full"
+            className="absolute w-5 h-5 bg-blue-200 rounded-full"
             initial={{
               x: Math.random() * 1200,
               y: Math.random() * 800,
