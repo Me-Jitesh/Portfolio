@@ -9,8 +9,7 @@ export default function Contact() {
           Let's Connect
         </h2>
 
-        <div className="flex justify-center gap-14">
-          {/* GitHub */}
+        <div className="grid grid-cols-3 sm:flex sm:justify-center gap-8 sm:gap-14">
           <a
             href="https://github.com/Me-Jitesh"
             target="_blank"
