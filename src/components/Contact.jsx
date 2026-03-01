@@ -1,5 +1,4 @@
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCode, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -9,20 +8,28 @@ export default function Contact() {
           Let's Connect
         </h2>
 
-        <div className="grid grid-cols-3 sm:flex sm:justify-center gap-8 sm:gap-14">
+        <div className="grid grid-cols-2 sm:flex sm:justify-center gap-10 sm:gap-14">
+          {/* WakaTime */}
           <a
-            href="https://github.com/Me-Jitesh"
+            href="https://wakatime.com/@Er_Jrsingh"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center"
+            className="group flex flex-col items-center focus:outline-none"
           >
-            <div className="p-[2px] rounded-full bg-gradient-to-r from-gray-300 to-gray-500 transition duration-300">
-              <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
-                <FaGithub className="h-8 w-8 text-gray-800" />
+            <div
+              className="p-[2px] rounded-full bg-gradient-to-r  from-purple-300 to-purple-500 
+              group-hover:from-purple-400 group-hover:to-purple-700 transition-all duration-500"
+            >
+              <div
+                className="p-6 rounded-full bg-white shadow-md group-hover:shadow-xl transition-all duration-300  
+                transform group-hover:-translate-y-2 group-hover:scale-110 
+                group-focus:ring-4 group-focus:ring-purple-300"
+              >
+                <FaCode className="h-8 w-8 text-purple-600 transition-transform duration-300 group-hover:rotate-6" />
               </div>
             </div>
-            <span className="mt-4 text-gray-700 group-hover:text-gray-900 transition">
-              GitHub
+            <span className="mt-4 text-gray-700 group-hover:text-purple-600 transition">
+              Code Time
             </span>
           </a>
 
@@ -43,6 +50,23 @@ export default function Contact() {
             </span>
           </a>
 
+          {/* Github */}
+          <a
+            href="https://github.com/Me-Jitesh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center"
+          >
+            <div className="p-[2px] rounded-full bg-gradient-to-r from-gray-300 to-gray-500 transition duration-300">
+              <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
+                <FaGithub className="h-8 w-8 text-gray-800" />
+              </div>
+            </div>
+            <span className="mt-4 text-gray-700 group-hover:text-gray-900 transition">
+              GitHub
+            </span>
+          </a>
+
           {/* Email */}
           <a
             href="mailto:jiteshs101@gmail.com"
@@ -50,7 +74,7 @@ export default function Contact() {
           >
             <div className="p-[2px] rounded-full bg-gradient-to-r from-red-300 to-red-500 transition duration-300">
               <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
-                <EnvelopeIcon className="h-8 w-8 text-red-500" />
+                <FaEnvelope  className="h-8 w-8 text-red-500" />
               </div>
             </div>
             <span className="mt-4 text-gray-700 group-hover:text-red-500 transition">
