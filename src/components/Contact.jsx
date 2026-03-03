@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaCode, FaEnvelope } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Contact() {
   return (
@@ -8,7 +9,7 @@ export default function Contact() {
           Let's Connect
         </h2>
 
-        <div className="grid grid-cols-2 sm:flex sm:justify-center gap-10 sm:gap-14">
+        <div className="grid grid-cols-2 sm:flex sm:justify-center gap-10 sm:gap-10">
           {/* WakaTime */}
           <a
             href="https://wakatime.com/@Er_Jrsingh"
@@ -67,6 +68,31 @@ export default function Contact() {
             </span>
           </a>
 
+          {/* LeetCode */}
+          <a
+            href="https://leetcode.com/u/Me-Jitesh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center focus:outline-none"
+          >
+            <div
+              className="p-[2px] rounded-full bg-gradient-to-r from-orange-300 to-orange-500 
+              group-hover:from-orange-400 group-hover:to-orange-600
+               transition-all duration-500"
+            >
+              <div
+                className="p-6 rounded-full bg-white shadow-md group-hover:shadow-xl transition-all duration-300  
+                transform group-hover:-translate-y-2 group-hover:scale-110
+                group-focus:ring-4 group-focus:ring-orange-300"
+              >
+                <SiLeetcode className="h-8 w-8 text-orange-500 transition-transform duration-300 group-hover:rotate-6" />
+              </div>
+            </div>
+            <span className="mt-4 text-gray-700 group-hover:text-orange-600 transition">
+              LeetCode
+            </span>
+          </a>
+
           {/* Email */}
           <a
             href="mailto:jiteshs101@gmail.com"
@@ -74,7 +100,7 @@ export default function Contact() {
           >
             <div className="p-[2px] rounded-full bg-gradient-to-r from-red-300 to-red-500 transition duration-300">
               <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
-                <FaEnvelope  className="h-8 w-8 text-red-500" />
+                <FaEnvelope className="h-8 w-8 text-red-500" />
               </div>
             </div>
             <span className="mt-4 text-gray-700 group-hover:text-red-500 transition">
