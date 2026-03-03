@@ -1,3 +1,4 @@
+import SocialIcon from "./SocialIcon";
 import { FaGithub, FaLinkedin, FaCode, FaEnvelope } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
@@ -9,104 +10,51 @@ export default function Contact() {
           Let's Connect
         </h2>
 
-        <div className="grid grid-cols-2 sm:flex sm:justify-center gap-10 sm:gap-10">
-          {/* WakaTime */}
-          <a
+        <div className="grid grid-cols-2 sm:flex sm:justify-center gap-12">
+          <SocialIcon
             href="https://wakatime.com/@Er_Jrsingh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col items-center focus:outline-none"
-          >
-            <div
-              className="p-[2px] rounded-full bg-gradient-to-r  from-purple-300 to-purple-500 
-              group-hover:from-purple-400 group-hover:to-purple-700 transition-all duration-500"
-            >
-              <div
-                className="p-6 rounded-full bg-white shadow-md group-hover:shadow-xl transition-all duration-300  
-                transform group-hover:-translate-y-2 group-hover:scale-110 
-                group-focus:ring-4 group-focus:ring-purple-300"
-              >
-                <FaCode className="h-8 w-8 text-purple-600 transition-transform duration-300 group-hover:rotate-6" />
-              </div>
-            </div>
-            <span className="mt-4 text-gray-700 group-hover:text-purple-600 transition">
-              Code Time
-            </span>
-          </a>
+            icon={FaCode}
+            label="Code Time"
+            tooltip="@Er_Jrsingh"
+            gradient="from-purple-300 to-purple-600 group-hover:from-purple-400 group-hover:to-purple-800"
+            brandColor="text-purple-600"
+          />
 
-          {/* LinkedIn */}
-          <a
+          <SocialIcon
             href="https://linkedin.com/in/me-jitesh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col items-center"
-          >
-            <div className="p-[2px] rounded-full bg-gradient-to-r from-blue-300 to-blue-500 transition duration-300">
-              <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
-                <FaLinkedin className="h-8 w-8 text-blue-600" />
-              </div>
-            </div>
-            <span className="mt-4 text-gray-700 group-hover:text-blue-600 transition">
-              LinkedIn
-            </span>
-          </a>
+            icon={FaLinkedin}
+            label="LinkedIn"
+            tooltip="@Me-Jitesh"
+            gradient="from-blue-300 to-blue-600 group-hover:from-blue-400 group-hover:to-blue-800"
+            brandColor="text-blue-600"
+          />
 
-          {/* Github */}
-          <a
+          <SocialIcon
             href="https://github.com/Me-Jitesh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col items-center"
-          >
-            <div className="p-[2px] rounded-full bg-gradient-to-r from-gray-300 to-gray-500 transition duration-300">
-              <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
-                <FaGithub className="h-8 w-8 text-gray-800" />
-              </div>
-            </div>
-            <span className="mt-4 text-gray-700 group-hover:text-gray-900 transition">
-              GitHub
-            </span>
-          </a>
+            icon={FaGithub}
+            label="GitHub"
+            tooltip="@Me-Jitesh"
+            gradient="from-gray-300 to-gray-600 group-hover:from-gray-400 group-hover:to-black"
+            brandColor="text-gray-800"
+          />
 
-          {/* LeetCode */}
-          <a
+          <SocialIcon
             href="https://leetcode.com/u/Me-Jitesh/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col items-center focus:outline-none"
-          >
-            <div
-              className="p-[2px] rounded-full bg-gradient-to-r from-orange-300 to-orange-500 
-              group-hover:from-orange-400 group-hover:to-orange-600
-               transition-all duration-500"
-            >
-              <div
-                className="p-6 rounded-full bg-white shadow-md group-hover:shadow-xl transition-all duration-300  
-                transform group-hover:-translate-y-2 group-hover:scale-110
-                group-focus:ring-4 group-focus:ring-orange-300"
-              >
-                <SiLeetcode className="h-8 w-8 text-orange-500 transition-transform duration-300 group-hover:rotate-6" />
-              </div>
-            </div>
-            <span className="mt-4 text-gray-700 group-hover:text-orange-600 transition">
-              LeetCode
-            </span>
-          </a>
+            icon={SiLeetcode}
+            label="LeetCode"
+            tooltip="@Me-Jitesh"
+            gradient="from-orange-300 to-orange-600 group-hover:from-orange-400 group-hover:to-orange-700"
+            brandColor="text-orange-500"
+          />
 
-          {/* Email */}
-          <a
+          <SocialIcon
             href="mailto:jiteshs101@gmail.com"
-            className="group flex flex-col items-center"
-          >
-            <div className="p-[2px] rounded-full bg-gradient-to-r from-red-300 to-red-500 transition duration-300">
-              <div className="p-6 rounded-full bg-white shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
-                <FaEnvelope className="h-8 w-8 text-red-500" />
-              </div>
-            </div>
-            <span className="mt-4 text-gray-700 group-hover:text-red-500 transition">
-              Email
-            </span>
-          </a>
+            icon={FaEnvelope}
+            label="Email"
+            tooltip="jiteshs101@gmail.com"
+            gradient="from-red-300 to-red-600 group-hover:from-red-400 group-hover:to-red-700"
+            brandColor="text-red-500"
+          />
         </div>
       </div>
     </section>
