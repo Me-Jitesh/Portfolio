@@ -6,7 +6,9 @@ export default function SocialIcon({
   label,
   tooltip,
   gradient,
-  brandColor,
+  iconColor,
+  labelHoverColor,
+  tooltipBg,
 }) {
   return (
     <a
@@ -21,19 +23,21 @@ export default function SocialIcon({
         className={`p-[2px] rounded-full bg-gradient-to-r ${gradient} transition-all duration-500`}
       >
         <div className="p-6 rounded-full bg-white shadow-md group-hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-2 group-hover:scale-110">
-          <Icon className={`h-8 w-8 ${brandColor}`} />
+          <Icon className={`h-8 w-8 ${iconColor}`} />
         </div>
       </div>
 
       {/* Label */}
       <span
-        className={`mt-4 text-gray-700 transition-colors duration-300 group-hover:${brandColor}`}
+        className={`mt-4 text-gray-700 transition-colors duration-300 ${labelHoverColor}`}
       >
         {label}
       </span>
 
-      {/* Tooltip BELOW */}
-      <span className="absolute top-full mt-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0 bg-gray-900 text-white text-xs px-3 py-1 rounded-md transition-all duration-300 pointer-events-none whitespace-nowrap">
+      {/* Tooltip */}
+      <span
+        className={`absolute top-full mt-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0 ${tooltipBg} text-white text-xs px-3 py-1 rounded-md transition-all duration-300 pointer-events-none whitespace-nowrap`}
+      >
         {tooltip}
       </span>
     </a>

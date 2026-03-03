@@ -16,8 +16,10 @@ export default function Contact() {
             icon={FaCode}
             label="Code Time"
             tooltip="@Er_Jrsingh"
-            gradient="from-purple-300 to-purple-600 group-hover:from-purple-400 group-hover:to-purple-800"
-            brandColor="text-purple-600"
+            gradient="from-purple-300 to-purple-600 group-hover:from-purple-400 group-hover:to-purple-700"
+            iconColor="text-purple-600"
+            labelHoverColor="group-hover:text-purple-600"
+            tooltipBg="bg-purple-600"
           />
 
           <SocialIcon
@@ -25,8 +27,10 @@ export default function Contact() {
             icon={FaLinkedin}
             label="LinkedIn"
             tooltip="@Me-Jitesh"
-            gradient="from-blue-300 to-blue-600 group-hover:from-blue-400 group-hover:to-blue-800"
-            brandColor="text-blue-600"
+            gradient="from-blue-300 to-blue-600 group-hover:from-blue-400 group-hover:to-blue-700"
+            iconColor="text-blue-600"
+            labelHoverColor="group-hover:text-blue-600"
+            tooltipBg="bg-blue-600"
           />
 
           <SocialIcon
@@ -35,7 +39,9 @@ export default function Contact() {
             label="GitHub"
             tooltip="@Me-Jitesh"
             gradient="from-gray-300 to-gray-600 group-hover:from-gray-400 group-hover:to-black"
-            brandColor="text-gray-800"
+            iconColor="text-gray-800"
+            labelHoverColor="group-hover:text-gray-900"
+            tooltipBg="bg-gray-900"
           />
 
           <SocialIcon
@@ -44,7 +50,9 @@ export default function Contact() {
             label="LeetCode"
             tooltip="@Me-Jitesh"
             gradient="from-orange-300 to-orange-600 group-hover:from-orange-400 group-hover:to-orange-700"
-            brandColor="text-orange-500"
+            iconColor="text-orange-500"
+            labelHoverColor="group-hover:text-orange-600"
+            tooltipBg="bg-orange-600"
           />
 
           <SocialIcon
@@ -53,7 +61,9 @@ export default function Contact() {
             label="Email"
             tooltip="jiteshs101@gmail.com"
             gradient="from-red-300 to-red-600 group-hover:from-red-400 group-hover:to-red-700"
-            brandColor="text-red-500"
+            iconColor="text-red-500"
+            labelHoverColor="group-hover:text-red-600"
+            tooltipBg="bg-red-600"
           />
         </div>
       </div>
