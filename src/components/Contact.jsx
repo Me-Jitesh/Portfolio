@@ -6,6 +6,7 @@ import {
   FaCode,
   FaEnvelope,
   FaFileAlt,
+  FaDownload,
 } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
@@ -102,20 +103,44 @@ export default function Contact() {
       </section>
 
       {isResumeOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
-          <div className="relative w-[90%] md:w-[80%] h-[85vh] bg-white rounded-xl shadow-2xl overflow-hidden">
-            <button
-              onClick={() => setIsResumeOpen(false)}
-              className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-md hover:bg-gray-900 transition"
-            >
-              Close
-            </button>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          onClick={() => setIsResumeOpen(false)}
+        >
+          <div
+            className="relative w-[95%] md:w-[75%] h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Top Bar */}
+            <div className="flex justify-between items-center px-6 py-4 border-b">
+              <h3 className="text-lg font-semibold text-gray-800">My Resume</h3>
 
-            <iframe
-              src="https://drive.google.com/file/d/1u7zLrukmtr4hfozhYQo2UH15s__eHYep/preview"
-              className="w-full h-full"
-              allow="autoplay"
-            />
+              <div className="flex gap-3">
+                {/* Download Button */}
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1u7zLrukmtr4hfozhYQo2UH15s__eHYep"
+                  className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
+                >
+                  <FaDownload className="h-4 w-4" />
+                </a>
+
+                {/* Close Button */}
+                <button
+                  onClick={() => setIsResumeOpen(false)}
+                  className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition"
+                >
+                  X
+                </button>
+              </div>
+            </div>
+
+            <div className="flex-1 flex items-center justify-center bg-gray-100">
+              <iframe
+                src="https://drive.google.com/file/d/1u7zLrukmtr4hfozhYQo2UH15s__eHYep/preview"
+                className="w-[95%] h-[95%] rounded-lg shadow-lg"
+                allow="autoplay"
+              />
+            </div>
           </div>
         </div>
       )}
