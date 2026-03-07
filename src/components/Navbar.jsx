@@ -4,13 +4,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         <div className="flex items-center gap-2">
           <h1 className="text-xl font-semibold tracking-tight text-gray-900">
-            <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent uppercase">
+            <span className="bg-gradient-to-r from-slate-700 via-sky-700 to-gray-700 bg-clip-text text-transparent uppercase">
               Jitesh Singh
             </span>
           </h1>
         </div>
 
-        <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+        <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
           {["Projects", "About", "Contact"].map((item) => (
             <a
               key={item}
