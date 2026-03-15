@@ -4,18 +4,58 @@ import profile from "../assets/profile.png";
 
 export default function Hero() {
   const skills = [
-    "Java",
-    "Spring Boot",
-    "Kafka",
-    "Microservices",
-    "Spring AI",
-    "MySQL",
-    "React",
-    "Javascript",
-    "Docker",
-    "AWS",
-    "Redis",
+    {
+      name: "Java",
+      badge:
+        "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white",
+    },
+    {
+      name: "Spring Boot",
+      badge:
+        "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white",
+    },
+    {
+      name: "Microservices",
+      badge:
+        "https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge&logo=apache",
+    },
+    {
+      name: "Kafka",
+      badge:
+        "https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka",
+    },
+    {
+      name: "Redis",
+      badge:
+        "https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white",
+    },
+    {
+      name: "MySQL",
+      badge:
+        "https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white",
+    },
+    {
+      name: "React",
+      badge:
+        "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+    },
+    {
+      name: "AWS",
+      badge:
+        "https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws",
+    },
+    {
+      name: "Docker",
+      badge:
+        "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+    },
+    {
+      name: "Linux",
+      badge:
+        "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
+    },
   ];
+
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -102,24 +142,16 @@ export default function Hero() {
             }}
           >
             {skills.map((skill, index) => (
-              <motion.span
+              <motion.img
                 key={index}
+                src={skill.badge}
+                alt={skill.name}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                className="px-4 py-2 text-sm font-medium 
-                           bg-white/70 backdrop-blur-md 
-                           text-blue-600 
-                           rounded-full 
-                           border border-blue-100 
-                           shadow-sm
-                           hover:shadow-lg 
-                           hover:-translate-y-1 
-                           transition duration-300"
-              >
-                {skill}
-              </motion.span>
+                className="h-8 hover:scale-110 transition duration-300"
+              />
             ))}
           </motion.div>
         </div>
