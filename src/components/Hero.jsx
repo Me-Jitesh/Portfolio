@@ -85,8 +85,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-lg text-gray-600 max-w-lg">
-            Designing distributed, fault-tolerant systems with production-grade
-            reliability.
+            As a backend developer starting my career, I’m focused on
+            strengthening my fundamentals in system design, reliability, and
+            scalable architecture.
+            {/* I’m building a strong foundation in backend development, with a growing interest in distributed systems and designing reliable, production-ready applications. */}
           </p>
 
           {/* Skills */}
