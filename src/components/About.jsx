@@ -6,19 +6,24 @@ export default function About() {
           About Me
         </h2>
 
-        <p className="text-slate-700 leading-5 text-lg">
-          I'm a backend-focused software engineer who enjoys building reliable
-          systems that solve real-world problems. My primary stack includes
-          Spring Boot and Apache Kafka, where I work with event-driven
-          architectures to design scalable and resilient services.
+        <p className="text-gray-700 leading-8 text-lg">
+          I’m a backend-focused software engineer at the beginning of my
+          professional journey, with a strong interest in how reliable systems
+          are built and maintained. I enjoy working with Java and Spring Boot to
+          develop clean, structured backend services.
         </p>
 
         <p className="text-gray-700 leading-8 text-lg mt-6">
-          I’m particularly interested in distributed systems, understanding how
-          services communicate, how failures are handled, and how performance
-          can be improved through thoughtful design. Beyond coding, I focus on
-          writing clean, maintainable code and continuously improving system
-          efficiency and observability.
+          Recently, I’ve been exploring event-driven architecture and
+          distributed systems using tools like Apache Kafka. I’m curious about
+          how services communicate, how failures are handled, and how systems
+          remain stable under load.
+        </p>
+
+        <p className="text-gray-700 leading-8 text-lg mt-6">
+          As I grow in my career, I’m focused on strengthening my fundamentals
+          in system design, writing maintainable code, and understanding
+          production-level engineering practices.
         </p>
 
         <p className="text-gray-700 leading-8 text-lg mt-6">
