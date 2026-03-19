@@ -5,7 +5,7 @@ export default function About() {
         <h2 className="text-3xl font-bold text-gray-900 mb-6 uppercase">
           About Me
         </h2>
-
+        {/* 
         <p className="text-gray-700 leading-8 text-lg">
           I’m a backend-focused software engineer at the beginning of my
           professional journey, with a strong interest in how reliable systems
@@ -29,6 +29,22 @@ export default function About() {
         <p className="text-gray-700 leading-8 text-lg mt-6">
           Currently, I am exploring Spring AI and production level system design
           to deepen my engineering expertise.
+        </p> */}
+
+        <p className="text-gray-700 leading-8 text-lg">
+          I’m a backend-focused software engineer passionate about building
+          clean and reliable services using Java and Spring Boot.
+        </p>
+
+        <p className="text-gray-700 leading-8 text-lg mt-6">
+          I’m currently exploring event-driven architecture and distributed
+          systems with Apache Kafka, learning how systems handle scale,
+          communication, and failure in real-world environments.
+        </p>
+
+        <p className="text-gray-700 leading-8 text-lg mt-6">
+          My focus is on strengthening my fundamentals in system design, writing
+          maintainable code, and growing into a well-rounded backend engineer.
         </p>
       </div>
     </section>
