@@ -29,7 +29,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center pt-10 px-6 bg-white overflow-hidden"
+      className="relative min-h-screen flex items-center pt-12 px-6 bg-white overflow-hidden"
     >
       {/* Cursor Glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
@@ -52,7 +52,7 @@ export default function Hero() {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-5 h-5 bg-blue-200 rounded-full"
+            className="absolute w-5 h-5 bg-sky-300 rounded-full"
             initial={{
               x: Math.random() * 1200,
               y: Math.random() * 800,
@@ -77,7 +77,7 @@ export default function Hero() {
         {/* TEXT */}
         <div>
           <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
-            <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent animate-pulse">
+            <span className="bg-gradient-to-r from-sky-500 via-sky-400 to-sky-300 bg-clip-text text-transparent animate-pulse">
               Building Scalable
             </span>
             <br />
@@ -85,10 +85,9 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-lg text-gray-600 max-w-lg">
-            As a backend developer starting my career, I’m focused on
+            As a Backend Developer starting my career, I’m focused on
             strengthening my fundamentals in system design, reliability, and
-            scalable architecture.
-            {/* I’m building a strong foundation in backend development, with a growing interest in distributed systems and designing reliable, production-ready applications. */}
+            scalable architecture
           </p>
 
           {/* Skills */}
@@ -112,9 +111,9 @@ export default function Hero() {
                 }}
                 className="px-4 py-2 text-sm font-medium 
                            bg-white/70 backdrop-blur-md 
-                           text-blue-600 
+                           text-sky-600 
                            rounded-full 
-                           border border-blue-100 
+                           border border-sky-100 
                            shadow-sm
                            hover:shadow-lg 
                            hover:-translate-y-1 
