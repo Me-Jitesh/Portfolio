@@ -57,8 +57,8 @@ export default function Projects() {
                     <span
                       key={index}
                       className="text-xs font-medium px-3 py-1 rounded-full 
-                                 bg-indigo-50 text-indigo-600 
-                                 border border-indigo-100"
+                                 bg-sky-50 text-blue-500 
+                                 border border-sky-100"
                     >
                       {tech.trim()}
                     </span>
@@ -72,12 +72,12 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-sm 
-                               px-5 py-2 rounded-3xl
-                               bg-gradient-to-r from-indigo-800 to-blue-500 
+                               px-10 py-2 rounded-3xl
+                               bg-gradient-to-r from-slate-700 to-sky-300
                                text-white 
                                shadow-md 
                                hover:shadow-lg 
-                               hover:from-blue-700 hover:to-indigo-700
+                               hover:from-gray-900 hover:to-sky-400
                                transition-all duration-300"
                   >
                     → Explore
