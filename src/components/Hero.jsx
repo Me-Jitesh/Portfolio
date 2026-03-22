@@ -52,7 +52,7 @@ export default function Hero() {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-5 h-5 bg-sky-200 rounded-full"
+            className="absolute w-5 h-5 bg-blue-200 rounded-full"
             initial={{
               x: Math.random() * 1200,
               y: Math.random() * 800,
